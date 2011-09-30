@@ -9,7 +9,7 @@ function required_vars($arrayFrom, &$arrayTo, $mandatory = true)
 		if ( empty($_GET[$varName]) )
 			if ( empty($_POST[$varName]) )
 				if ($mandatory)
-					die('NULL');
+					die('NULL: '.$varName);
 				else
 					$arrayTo[$varName] = NULL;
 			else
