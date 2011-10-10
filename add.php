@@ -5,7 +5,7 @@ $newArray = array();
 required_vars( array('uuid', 'nickname', 'email', 'pubKey'), $newArray );
 
 $filename = tempnam(dirname(__FILE__).'/'.KEYSTORE_DIR, PREFIX_ID);
-
+// ICI : problème de fichier qui se crée pas en ligne :/
 /*
 if ( preg_match('#^[a-zA-Z0-9\-\_\{\}]+$#', $GLOBALS['newArray']['uuid']) == 0 || preg_match('#^[a-zA-Z0-9]+$#', $GLOBALS['newArray']['nickname']) == 0 || preg_match('#^([a-zA-Z0-9]+[\-\_\.]?)+@([a-zA-Z0-9]+[\-\_\.]?)+\.[a-zA-Z]{2,5}$#', $GLOBALS['newArray']['email']) == 0 || preg_match('#^[a-zA-Z0-9\+\/=]+$#', $GLOBALS['newArray']['publicKey']) == 0 )
 	die('NULL');
@@ -16,6 +16,15 @@ foreach ($newArray as $key => $var)
 	$required_vars[$key] = htmlentities($var, ENT_QUOTES, 'UTF-8');
 $required_vars['created_on'] = time();
 $required_vars['created_with'] = $_SERVER['HTTP_USER_AGENT'];
+
+print_r($required_vars);
+echo '<br />';
+echo $filename;
+echo '<br />';
+echo dirname(__FILE__).'/'.KEYSTORE_DIR;
+echo '<br />';
+echo file_exists(dirname(__FILE__).'/'.KEYSTORE_DIR);
+echo '<br />';
 
 $fileToWrite = json_encode($required_vars);
 
