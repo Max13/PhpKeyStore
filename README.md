@@ -33,7 +33,7 @@ API
 Parameters: You can send the parameters by GET, POST or BOTH. The only thing you can't do, is sending a Public Key by GET... It's too big.
 
 ### Add an identity to the KeyStore
-+ Method URL: http://**PhpKeyStore**/add.php
++ Method URL: http://**PhpKeyStore_URL**/add.php
 <table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0px 0px 20px 0px;">
 <tr>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">uuid</td>
