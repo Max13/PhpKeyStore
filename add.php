@@ -17,15 +17,6 @@ foreach ($newArray as $key => $var)
 $required_vars['created_on'] = time();
 $required_vars['created_with'] = $_SERVER['HTTP_USER_AGENT'];
 
-print_r($required_vars);
-echo '<br />';
-echo $filename;
-echo '<br />';
-echo dirname(__FILE__).'/'.KEYSTORE_DIR;
-echo '<br />';
-echo file_exists(dirname(__FILE__).'/'.KEYSTORE_DIR);
-echo '<br />';
-
 $fileToWrite = json_encode($required_vars);
 
 if ( !file_put_contents($filename, $fileToWrite, LOCK_EX) )
