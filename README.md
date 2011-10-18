@@ -38,14 +38,14 @@ Parameters: You can send the parameters by GET, POST or both (even HEAD for some
 <tr>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">uuid</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">string</td>
-	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;"></td>
+	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">&nbsp;</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Your internal UUID</td>
 </tr>
 
 <tr>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">nickname</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">string</td>
-	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;"></td>
+	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">&nbsp;</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Your nickname</td>
 </tr>
 
@@ -59,7 +59,7 @@ Parameters: You can send the parameters by GET, POST or both (even HEAD for some
 <tr>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">publicKey</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">string</td>
-	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;"></td>
+	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">&nbsp;</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Your public key</td>
 </tr>
 </table>
