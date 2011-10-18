@@ -30,7 +30,7 @@ Examples
 
 API
 ---
-Parameters: You can send the parameters by GET, POST or BOTH. The only thing you can't do, is sending a Public Key by GET... It's too big.
+Parameters: You can send the parameters by GET, POST or both (even HEAD for some API if you are smart enough ;) ). The only thing you can't do, is sending a Public Key by GET... It's too big.
 
 ### Add an identity to the KeyStore
 + Method URL: http://**PhpKeyStore_URL**/add.php
@@ -46,20 +46,20 @@ Parameters: You can send the parameters by GET, POST or BOTH. The only thing you
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">nickname</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">string</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;"></td>
-	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Will be shown when got</td>
+	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Your nickname</td>
 </tr>
 
 <tr>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">email</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">string</td>
-	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;"></td>
-	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Will be shown when got</td>
+	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">&nbsp;</td>
+	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Your attached e-mail</td>
 </tr>
 
 <tr>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">publicKey</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">string</td>
 	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;"></td>
-	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Will be shown when got</td>
+	<td style="height: 25px; border-bottom: 1px solid #CCCCCC;">Your public key</td>
 </tr>
 </table>
